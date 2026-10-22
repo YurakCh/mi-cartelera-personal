@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cartelera",
+  "main": "./worker/index.ts",
+  "compatibility_date": "2026-10-19",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  },
+  "vars": {
+    "TMDB_API_KEY": "d1d3b56748ca43921362d18b8c21a06f"
+  },
+  "routes": [
+    {
+      "pattern": "cartelera.yurakchalen.com",
+      "custom_domain": true
+    }
+  ]
+}
